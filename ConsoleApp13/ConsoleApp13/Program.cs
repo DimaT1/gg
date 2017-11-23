@@ -29,6 +29,10 @@ namespace ConsoleApp13
                     class1arr[i] = new Class1(i);
                 }
 
+                Student s = new Student("Иванов", "Иван", 1);
+                Console.WriteLine(s);
+                Console.WriteLine($"{RandomHelper.NextDouble(1, 3)} {RandomHelper.NextDouble(1, 3)} {RandomHelper.NextDouble(1, 3)}");
+
                 Console.WriteLine($"{class1arr[0].CountSmth}");
                 // Объявление и ввод переменных
                 Console.WriteLine($"a{3.15:F1}a{456:D5}{123,+5} {class1arr[0].CountSmth} {class1arr[4].FirstField}");

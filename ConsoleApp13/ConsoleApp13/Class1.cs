@@ -1,11 +1,10 @@
-﻿/*
-    Файл класса
-
- */
-using System;
+﻿using System;
 
 namespace ConsoleApp13
 {
+    /// <summary>
+    /// Класс 
+    /// </summary>
     class Class1
     {
         public Class1(int f)
@@ -22,7 +21,7 @@ namespace ConsoleApp13
         public int FirstField
         {
             get { return _firstField; }
-            set { _firstField = FirstField; /* Можно без всего */}
+            set { _firstField = value; /* Можно без всего */}
         }
 
         public double CountSmth

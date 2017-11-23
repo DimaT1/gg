@@ -1,12 +1,11 @@
-﻿/*
-    Файл класса InputHelper
-    Предназначен для упрощения диалога с пользователем во время ввода информации
- */
-
-using System;
+﻿using System;
 
 namespace ConsoleApp13
 {
+    /// <summary>
+    /// Класс InputHelper.
+    /// Предназначен для упрощения диалога с пользователем во время ввода информации
+    /// </summary>
     class InputHelper
     {
         /// <summary>
@@ -71,6 +70,18 @@ namespace ConsoleApp13
         /// <param name="r">Правая граница промежутка</param>
         /// <returns>Принадлежность числа промежутку</returns>
         static bool IsInRange(uint a, uint l, uint r)
+        {
+            return (l <= a) && (a <= r);
+        }
+
+        /// <summary>
+        /// Метод проверки принадлежности числа a промежутку [l; r]
+        /// </summary>
+        /// <param name="a">Число, принадлежность которого необходимо проверить</param>
+        /// <param name="l">Левая граница промежутка</param>
+        /// <param name="r">Правая граница промежутка</param>
+        /// <returns>Принадлежность числа промежутку</returns>
+        static bool IsInRange(int a, int l, int r)
         {
             return (l <= a) && (a <= r);
         }
